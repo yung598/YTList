@@ -44,6 +44,116 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/c/%E4%B8%89%E7%AB%8BLIVE%E6%96%B0%E8%81%9E/live)
         EOL
+        
+    - name: Get 華視新聞資訊.m3u8
+      run: |
+        touch ./華視新聞資訊.m3u8
+        sudo cat >./華視新聞資訊.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/c/CtsTw/live)
+        EOL
+        
+    - name: Get 中天新聞.m3u8
+      run: |
+        touch ./中天新聞.m3u8
+        sudo cat >./中天新聞.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/c/ctitv/live)
+        EOL
+        
+    - name: Get 台視新聞.m3u8
+      run: |
+        touch ./台視新聞.m3u8
+        sudo cat >./台視新聞.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/c/ttvnewsview/live)
+        EOL
+        
+    - name: Get 中視新聞.m3u8
+      run: |
+        touch ./中視新聞.m3u8
+        sudo cat >./中視新聞.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/c/twctvnews/live)
+        EOL
+        
+    - name: Get 公視13頻道.m3u8
+      run: |
+        touch ./公視13頻道.m3u8
+        sudo cat >./公視13頻道.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/c/ptslivestream/live)
+        EOL
+        
+    - name: Get 57東森財經新聞.m3u8
+      run: |
+        touch ./57東森財經新聞.m3u8
+        sudo cat >./57東森財經新聞.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/c/57%E6%9D%B1%E6%A3%AE%E8%B2%A1%E7%B6%93%E6%96%B0%E8%81%9E/live)
+        EOL
+        
+    - name: Get 寰宇新聞頻道.m3u8
+      run: |
+        touch ./寰宇新聞頻道.m3u8
+        sudo cat >./寰宇新聞頻道.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/c/%E5%AF%B0%E5%AE%87%E6%96%B0%E8%81%9E%E9%A0%BB%E9%81%93/live)
+        EOL
+        
+    - name: Get 公視戲劇.m3u8
+      run: |
+        touch ./公視戲劇.m3u8
+        sudo cat >./公視戲劇.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/c/%E5%85%AC%E8%A6%96/live)
+        EOL
+        
+    - name: Get 我們這一家(卡通).m3u8
+      run: |
+        touch ./我們這一家(卡通).m3u8
+        sudo cat >./我們這一家(卡通).m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=U9VpeXil8u8)
+        EOL
+        
+    - name: Get 中華一番(卡通).m3u8
+      run: |
+        touch ./中華一番(卡通).m3u8
+        sudo cat >./中華一番(卡通).m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=e74dLKMqzXk)
+        EOL
+        
+    - name: Get 家庭教師(卡通).m3u8
+      run: |
+        touch ./家庭教師(卡通).m3u8
+        sudo cat >./家庭教師(卡通).m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=VcC0EI2n86E)
+        EOL
 
 #卡通頻道
 
