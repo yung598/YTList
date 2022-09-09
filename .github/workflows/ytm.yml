@@ -34,6 +34,16 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/c/%E4%B8%89%E7%AB%8BLIVE%E6%96%B0%E8%81%9E/live)
         EOL
+        
+    - name: Get TVBS新聞.m3u8
+      run: |
+        touch ./TVBS新聞.m3u8
+        sudo cat >./TVBS新聞.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/c/%E4%B8%89%E7%AB%8BLIVE%E6%96%B0%E8%81%9E/live)
+        EOL
 
 #卡通頻道
 
