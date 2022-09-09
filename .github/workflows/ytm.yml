@@ -23,6 +23,20 @@ jobs:
         sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
         sudo chmod a+rx /usr/local/bin/yt-dlp
 
+#新聞頻道
+
+    - name: Get 三立新聞.m3u8 #三立新聞
+      run: |
+        touch ./三立新聞.m3u8
+        sudo cat >./三立新聞.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/c/%E4%B8%89%E7%AB%8BLIVE%E6%96%B0%E8%81%9E/live)
+        EOL
+
+#卡通頻道
+
     - name: Get PeppaPig.m3u8 #小豬佩奇
       run: |
         touch ./PeppaPig.m3u8
